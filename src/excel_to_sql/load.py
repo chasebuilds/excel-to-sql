@@ -5,6 +5,7 @@ from __future__ import annotations
 from collections import Counter
 from collections.abc import Sequence
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any
 
 import sqlalchemy as sa
@@ -118,7 +119,10 @@ def load(
         raise ValueError(f"key {key!r} is not a column (columns: {', '.join(names)})")
     key = key or suggest_key(cols)
     report = Report(table, mode, key, read=len(rows))
-    engine = sa.create_engine(db if "://" in db else f"sqlite:///{db}")
+    if "://" not in db:
+        Path(db).parent.mkdir(parents=True, exist_ok=True)
+        db = f"sqlite:///{db}"
+    engine = sa.create_engine(db)
     with engine.begin() as conn:
         exists = sa.inspect(conn).has_table(table)
         if mode == "replace" or not exists:
