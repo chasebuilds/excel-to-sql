@@ -121,3 +121,11 @@ The sample file was made with `python -m benchmark.generate --seed 7 --rows 60 -
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## More from Chase Builds
+
+- **[business-research-tool](https://github.com/chasebuilds/business-research-tool)**: Company research sheets where every fact has a source.
+- **[json-to-tables](https://github.com/chasebuilds/json-to-tables)**: Nested JSON to tidy related tables in Excel, CSV or SQLite. ([live demo](https://chasebuilds.github.io/json-to-tables/))
+- **[housing-market-trends](https://github.com/chasebuilds/housing-market-trends)**: Monthly market metrics and a time-adjustment rate with a confidence band. ([live demo](https://chasebuilds.github.io/housing-market-trends/))
+
+[All projects, sorted by industry](https://github.com/chasebuilds) · [chasebuilds.github.io](https://chasebuilds.github.io)
