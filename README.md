@@ -2,6 +2,10 @@
 
 [![ci](https://github.com/chasebuilds/excel-to-sql/actions/workflows/ci.yml/badge.svg)](https://github.com/chasebuilds/excel-to-sql/actions/workflows/ci.yml) ![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue) [![MIT license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
+**[Live demo: try it in your browser](https://chasebuilds.github.io/excel-to-sql/)**. Drop in your own file or run the bundled sample with one click. The real package runs in the page with Pyodide, so files never leave your browser.
+
+[![The live demo after running the sample: the tool's summary, result tabs and output table](docs/demo.png)](https://chasebuilds.github.io/excel-to-sql/)
+
 Loads a CSV or Excel sheet into a SQL table. It reads the values to pick each column's type (yes/no, whole number, money, decimal number, date, date and time, text), cleans the column names to `snake_case`, marks which columns can be empty, suggests a primary key, and prints a load report: rows loaded, rows rejected and why. SQLite by default; any SQLAlchemy database URL (Postgres, MySQL) works too.
 
 ## Measured result
