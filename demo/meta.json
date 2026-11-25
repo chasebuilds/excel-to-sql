@@ -1,0 +1,7 @@
+{
+  "title": "Excel to SQL: Load spreadsheets into SQL with typed columns | Chase Builds",
+  "description": "Load CSV and Excel files into SQL with type inference, key detection and a load report that lists every rejected row. Try it on SQLite in your browser.",
+  "url": "https://chasebuilds.github.io/excel-to-sql/",
+  "image": "docs/demo.png",
+  "repo": "excel-to-sql"
+}
